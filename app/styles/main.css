@@ -59,6 +59,12 @@ body {
   margin-top: 28px;
 }
 
+.highlight {
+  color: #fa5e5b;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

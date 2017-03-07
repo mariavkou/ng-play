@@ -13,7 +13,7 @@ angular.module('ngPlayApp')
       {
 	id: 1,
 	name: "Strawberry cup",
-	img: "strawberry.jpg",
+	img: "strawberry_cups.jpg",
 	calories: 430,
 	rating: 5,
 	count: 2
@@ -21,11 +21,19 @@ angular.module('ngPlayApp')
       {
 	id: 2,
 	name: "Chocolate cup",
-	img: "chocolate.jpg",
+	img: "chocolate_cups.jpeg",
 	calories: 500,
 	rating: 5,
 	count: 13
       }
     ];
+
+    this.increment = function(item) {
+	item.rating = ((item.rating * 10) + 1) / 10;
+    };
+
+    this.decrement = function(item) {
+	item.rating = ((item.rating * 10) - 1) / 10;
+    };
 
   });
