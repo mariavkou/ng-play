@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="items-container" ng-repeat="item in cups.items">
+        <div class="col-md-4">
+	    <h4>{{item.name}}</h4>
+	    <p>Rating: {{item.rating}} <span ng-if="item.rating > 4.0" ng-class="{highlight: item.rating > 4.5}"> - People love this cup!</span></p>
+	    <p>Image: {{item.img}}</p>
+	</div>
+     </div>
+</div>
