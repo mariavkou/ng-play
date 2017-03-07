@@ -9,6 +9,7 @@
  */
 angular.module('ngPlayApp')
   .controller('CupsCtrl', function () {
+    this.name = "Cupcakes Online Store";
     this.items = [
       {
 	id: 1,
@@ -16,7 +17,8 @@ angular.module('ngPlayApp')
 	img: "strawberry_cups.jpg",
 	calories: 430,
 	rating: 5,
-	count: 2
+	price: 2.5,
+	quantity: 56
       },
       {
 	id: 2,
@@ -24,16 +26,17 @@ angular.module('ngPlayApp')
 	img: "chocolate_cups.jpeg",
 	calories: 500,
 	rating: 5,
-	count: 13
+	price: 3.0,
+	quantity: 89
       }
     ];
 
-    this.increment = function(item) {
-	item.rating = ((item.rating * 10) + 1) / 10;
+    this.buy = function(item) {
+	item.quantity -= 1;
     };
 
-    this.decrement = function(item) {
-	item.rating = ((item.rating * 10) - 1) / 10;
+    this.return = function(item) {
+	item.quantity += 1;
     };
 
   });

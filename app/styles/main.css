@@ -65,6 +65,12 @@ body {
   font-style: italic;
 }
 
+#storeHeading {
+  color: #fa5e5b;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
